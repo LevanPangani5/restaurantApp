@@ -1,0 +1,13 @@
+﻿@page
+@model restaurantApp.Pages.CountriesModel
+@{
+}
+
+<div class="justify-content-center">
+    @foreach (var country in Model.fakeCountryDb)
+    {
+        <div class="col-4 mb-5">
+            <p>@country.Name</p>
+        </div>
+    }
+</div>

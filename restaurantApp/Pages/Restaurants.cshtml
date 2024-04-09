@@ -1,0 +1,15 @@
+﻿@page
+@model restaurantApp.Pages.RestaurantsModel
+@{
+}
+
+
+<div class="justify-content-center">
+    @foreach (var restaurant in Model.fakeRestaurantDb)
+    {
+        <div class="col-4 mb-5">
+            <p>@restaurant.RestaurantName</p>
+            <p>@restaurant.Stars</p>
+        </div>
+    }
+</div>
